@@ -1,0 +1,26 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "My first Gulp Progect",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linata81/homework.git"
+  },
+  "author": "linata81",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linata81/homework/issues"
+  },
+  "homepage": "https://github.com/linata81/homework#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp-sass": "^3.1.0"
+  }
+}

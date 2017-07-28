@@ -1,0 +1,81 @@
+@charset "UTF-8";
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+a {
+  text-decoration: none; }
+
+.greeting {
+  width: 1100px;
+  height: 650px;
+  margin: 0 auto;
+  background: url(../img/texture.png) no-repeat;
+  overflow: hidden;
+  color: white; }
+
+.greeting_header {
+  width: 940px;
+  height: 85px;
+  padding: 0 80px;
+  font: normal 13px 'Conv_Ubuntu-Medium';
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.greeting_logo {
+  flex: 1;
+  margin: 0;
+  padding: 0; }
+
+.logo_pic {
+  display: block;
+  max-width: 100%; }
+
+.menu {
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.menu li:first-child {
+  list-style-type: none; }
+
+.menu li a {
+  color: white; }
+
+.greeting_button {
+  width: 100px;
+  height: 35px;
+  background: #e45028;
+  border-radius: 5px; }
+
+.button {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px; }
+
+.greeting_button:hover {
+  background: #c1401e; }
+
+/* .Мы_делаем_натуральные_бургеры {
+  font-size: 72px;
+  font-family: "Gagalin";
+  color: rgb(249, 180, 59);
+  line-height: 1.181;
+  text-align: left;
+  -moz-transform: matrix( 1.00073354323579,0,0,0.99971888136576,0,0);
+  -webkit-transform: matrix( 1.00073354323579,0,0,0.99971888136576,0,0);
+  -ms-transform: matrix( 1.00073354323579,0,0,0.99971888136576,0,0);
+  position: absolute;
+  left: 584.408px;
+  top: 294.157px;
+  z-index: 203;
+}  */
