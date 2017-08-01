@@ -8,3 +8,7 @@ $dark:#2f3234;
     border-radius: $width/2;
     background-color: $color;
 }
+@function rem($px) {
+    @return $px / 16px+0rem;
+}
+$wb: 100%/3;

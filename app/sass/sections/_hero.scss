@@ -57,25 +57,24 @@
 .hero__content {
     width: 100%;
     display: flex;
-    flex-grow: 1;
+    // flex-grow: 1;
     flex-wrap: wrap;
     align-items: center;
     box-sizing: border-box;
     padding: 0 80px;
+    margin: auto 0;
+    align-items: stretch;
 }
 .hero__img, .hero__description {
     flex-basis: 50%;
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: center;
-}
-.hero__img {
     box-sizing: border-box;
     padding-left: 15px;
 }
-.title_hero{
-    padding-top: 120px;
+.hero__description {
+    box-sizing: border-box;
 }
 .hero__description-text {
     color: #fff;
@@ -87,7 +86,7 @@
 .scroll_img {
     position: absolute;
     bottom: 40px;
-    left: 535px;
+    left: 50%;
     fill: #fff;
     width: 30px;
     height: 15px;
