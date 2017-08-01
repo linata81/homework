@@ -1,0 +1,10 @@
+$yellow:#f9b43b;
+$orange:#e45028;
+$dark:#2f3234;
+
+@mixin circle($width, $color) {
+    width: $width;
+    height: $width;
+    border-radius: $width/2;
+    background-color: $color;
+}

@@ -1,81 +1,295 @@
-@charset "UTF-8";
-html {
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/ubuntu/ubuntu-b-webfont.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/ubuntu/ubuntu-light-webfont.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/ubuntu/ubuntu-medium-webfont.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/ubuntu/ubuntu-regular-webfont.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gagalin';
+  src: url("../fonts/gagalin-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lifehack';
+  src: url("../fonts/lifehack_medium-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, .wrapper {
   width: 100%;
-  height: 100%; }
-
-body {
-  width: 100%;
-  height: 100%; }
-
-a {
-  text-decoration: none; }
-
-.greeting {
-  width: 1100px;
-  height: 650px;
-  margin: 0 auto;
-  background: url(../img/texture.png) no-repeat;
-  overflow: hidden;
-  color: white; }
-
-.greeting_header {
-  width: 940px;
-  height: 85px;
-  padding: 0 80px;
-  font: normal 13px 'Conv_Ubuntu-Medium';
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-
-.greeting_logo {
-  flex: 1;
-  margin: 0;
-  padding: 0; }
-
-.logo_pic {
-  display: block;
-  max-width: 100%; }
-
-.menu {
-  width: 500px;
+  height: 100%;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  line-height: 1.42;
+  color: #2f3234;
+}
+
+.section {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.31);
+  min-width: 1100px;
+  min-height: 650px;
+}
+
+.container {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
 
-.menu li:first-child {
-  list-style-type: none; }
+ul {
+  margin: 0;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
 
-.menu li a {
-  color: white; }
+a {
+  text-decoration: none;
+}
 
-.greeting_button {
+.btn {
   width: 100px;
   height: 35px;
   background: #e45028;
-  border-radius: 5px; }
-
-.button {
-  display: block;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   color: white;
-  text-align: center;
-  padding: 10px; }
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.42;
+  text-transform: uppercase;
+  padding: 10px 17px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
 
-.greeting_button:hover {
-  background: #c1401e; }
+.btn:hover {
+  background-color: #c1401e;
+}
 
-/* .Мы_делаем_натуральные_бургеры {
+.title {
+  color: #f9b43b;
+  font-family: 'Gagalin';
   font-size: 72px;
-  font-family: "Gagalin";
-  color: rgb(249, 180, 59);
-  line-height: 1.181;
-  text-align: left;
-  -moz-transform: matrix( 1.00073354323579,0,0,0.99971888136576,0,0);
-  -webkit-transform: matrix( 1.00073354323579,0,0,0.99971888136576,0,0);
-  -ms-transform: matrix( 1.00073354323579,0,0,0.99971888136576,0,0);
+  font-weight: 400;
+  line-height: 1.42;
+  margin: 0;
+}
+
+.hero {
+  background-image: url(../img/bg/hero_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.header {
+  width: 100%;
+  height: 85px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 80px 0 80px;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__menu {
+  margin-right: 15px;
+}
+
+.nav {
+  min-width: 500px;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__item {
+  display: block;
+}
+
+.nav__item:after {
+  display: inline-block;
+  vertical-align: middle;
+  content: ' ';
+  width: 5px;
+  height: 5px;
+  -webkit-border-radius: 2.5px;
+          border-radius: 2.5px;
+  background-color: #fff;
+  margin: 0 12px;
+}
+
+.nav__item:last-child:after {
+  display: none;
+}
+
+.nav__link {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.42;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.hero__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 80px;
+}
+
+.hero__img, .hero__description {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero__img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 15px;
+}
+
+.title_hero {
+  padding-top: 120px;
+}
+
+.hero__description-text {
+  color: #fff;
+  font-family: 'Lifehack';
+  font-size: 65px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.scroll_img {
   position: absolute;
-  left: 584.408px;
-  top: 294.157px;
-  z-index: 203;
-}  */
+  bottom: 40px;
+  left: 535px;
+  fill: #fff;
+  width: 30px;
+  height: 15px;
+}

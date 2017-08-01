@@ -6,43 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MrBurger</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css"
 </head>
 <body>
-    <div class="greeting">
-        <div class="greeting_header">
-            <div class="greeting_logo">
-                <a href="#" class="logo">
-                    <img src="img/logo.png" alt="" class="logo_pic">
-                </a>
+    <div class="wrapper">
+        <section class="section hero">
+            <div class="container">
+                <header class="header">
+                    <div class="header__logo">
+                        <a href="#" class="logo">
+                            <img src="img/logo.svg" alt="logo" class="logo__img">
+                        </a>
+                    </div>
+                    <div class="header__menu">
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__item"><a href="#" class="nav__link">о нас</a></li>
+                                <li class="nav__item"><a href="#" class="nav__link">бургеры</a></li>
+                                <li class="nav__item"><a href="#" class="nav__link">команда</a></li>
+                                <li class="nav__item"><a href="#" class="nav__link">меню</a></li>
+                                <li class="nav__item"><a href="#" class="nav__link">отзывы</a></li>
+                                <li class="nav__item"><a href="#" class="nav__link">контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__btn">
+                        <a href="#" class="btn">заказать</a>
+                    </div>
+                </header>
+                <article class="hero__content">
+                    <div class="hero__img"><img src="img/drops.png" alt="drops"></div>
+                    <div class="hero__description">
+                        <h2 class="title title_hero">мы делаем</h2>
+                        <div class="hero__description-text">натуральные бургеры</div>
+                    </div>
+                </article>
+                <div class="hero__points"></div>
+                <div class="hero__scroll">
+                    <svg class="scroll_img">
+                        <use xlink:href="img/sprite.svg#arrow-scroll"></use>
+                    </div>
             </div>
-            <div class="greeting_menu">
-                <ul class="menu">
-                    <li><a href="#" >О НАС </a></li>
-                    <li><a href="#" >БУРГЕРЫ</a></li>
-                    <li><a href="#" >КОМАНДА </a></li>
-                    <li><a href="#" >МЕНЮ </a></li>
-                    <li><a href="#" >ОТЗЫВЫ </a></li>
-                    <li><a href="#" >КОНТАКТЫ </a></li>
-                </ul>
-            </div>
-            <div class="greeting_button">
-                <a href="#" class="button">
-                    ЗАКАЗАТЬ
-                </a>   
-            </div>
-        </div>
-        <center>
-            <div class="burger"></div>
-            <div class="text">
-                <div></div>
-                <div></div>
-            </div> 
-        </center>
-        <div class="movement"></div>
-        <div class="scroll"></div>
-       
+        </section>
+
+
+
+
+
+
     </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
 </body>
 </html>
