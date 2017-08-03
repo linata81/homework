@@ -1,0 +1,99 @@
+.burger {
+    background-image: linear-gradient(180deg,#f9b43b 0,#eb8c38 40%,#eb8c38 60%,#eb8c38 0,#f9b43b);
+    color: white;
+}
+.container__burger {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    height: 100%;
+    min-height: 650px;
+}
+.burger__img, .burger__content {
+    display: flex;
+    flex-direction: column;
+    width: 46.4%;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.img__top{
+    width: 91px;
+    height: 91px;
+    background: #f08c33;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icon__burger, {
+    fill: white;
+    width: 48px;
+    height: 45px;
+}
+.img__text{
+    text-transform: uppercase;
+    font-family: 'Gagalin';
+    font-size: 14px;
+} 
+.img__bot {
+    width: 91px;
+    height: 91px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.kkal {
+    fill: white;
+    width: 64px;
+    height: 63px;
+}
+.title_burger{
+    color: white;
+    line-height: rem(65px);
+    margin-bottom: rem(40px);
+}
+.burger__content__price{
+    display: flex;
+    margin-top: rem(10px);
+}
+.price, {
+    display: flex;
+    align-items: baseline;
+}
+.price__number {
+    font-family: 'Gagalin';
+    font-size: 72px;
+    color: $orange;
+    margin-right: 10px;
+}
+.price__letter {
+    font-family: 'Gagalin';
+    font-size: 30px;
+    color: $orange;
+    margin-right: 30px;
+}
+.burger__btn {
+    margin: 58px 0 21px 0;
+}
+.scroll__b {
+    fill: #fff;
+    width: 30px;
+    height: 15px;
+}
+.burger__scroll__left {
+    transform: rotate(90deg);
+    height: 15px;
+    width:3.6%;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.burger__scroll__right {
+    transform: rotate(270deg);
+    order: 1;
+    height: 15px;
+    width:3.6%;
+    margin-bottom: auto;
+    margin-top: auto;
+}

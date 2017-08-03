@@ -1,6 +1,7 @@
 $yellow:#f9b43b;
 $orange:#e45028;
 $dark:#2f3234;
+$wb: 100%/3;
 
 @mixin circle($width, $color) {
     width: $width;
@@ -11,4 +12,4 @@ $dark:#2f3234;
 @function rem($px) {
     @return $px / 16px+0rem;
 }
-$wb: 100%/3;
+

@@ -100,6 +100,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 .btn {
   width: 100px;
   height: 35px;
@@ -281,7 +285,7 @@ a {
   line-height: 1;
 }
 
-.scroll_img {
+.scroll__h {
   position: absolute;
   bottom: 40px;
   left: 50%;
@@ -344,7 +348,7 @@ a {
 .item__сaption, .item__text {
   text-align: center;
   width: 100%;
-  margin-top: 1.875rem;
+  margin-top: 1.5625rem;
 }
 
 .meat {
@@ -374,4 +378,183 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 20px;
+}
+
+.burger {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9b43b), color-stop(40%, #eb8c38), color-stop(60%, #eb8c38), color-stop(0, #eb8c38), to(#f9b43b));
+  background-image: -webkit-linear-gradient(top, #f9b43b 0, #eb8c38 40%, #eb8c38 60%, #eb8c38 0, #f9b43b);
+  background-image: -o-linear-gradient(top, #f9b43b 0, #eb8c38 40%, #eb8c38 60%, #eb8c38 0, #f9b43b);
+  background-image: linear-gradient(180deg, #f9b43b 0, #eb8c38 40%, #eb8c38 60%, #eb8c38 0, #f9b43b);
+  color: white;
+}
+
+.container__burger {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  min-height: 650px;
+}
+
+.burger__img, .burger__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 46.4%;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.img__top {
+  width: 91px;
+  height: 91px;
+  background: #f08c33;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.icon__burger {
+  fill: white;
+  width: 48px;
+  height: 45px;
+}
+
+.img__text {
+  text-transform: uppercase;
+  font-family: 'Gagalin';
+  font-size: 14px;
+}
+
+.img__bot {
+  width: 91px;
+  height: 91px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.kkal {
+  fill: white;
+  width: 64px;
+  height: 63px;
+}
+
+.title_burger {
+  color: white;
+  line-height: 4.0625rem;
+  margin-bottom: 2.5rem;
+}
+
+.burger__content__price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.625rem;
+}
+
+.price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.price__number {
+  font-family: 'Gagalin';
+  font-size: 72px;
+  color: #e45028;
+  margin-right: 10px;
+}
+
+.price__letter {
+  font-family: 'Gagalin';
+  font-size: 30px;
+  color: #e45028;
+  margin-right: 30px;
+}
+
+.burger__btn {
+  margin: 58px 0 21px 0;
+}
+
+.scroll__b {
+  fill: #fff;
+  width: 30px;
+  height: 15px;
+}
+
+.burger__scroll__left {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  height: 15px;
+  width: 3.6%;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.burger__scroll__right {
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  height: 15px;
+  width: 3.6%;
+  margin-bottom: auto;
+  margin-top: auto;
 }
