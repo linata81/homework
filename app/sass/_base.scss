@@ -1,33 +1,53 @@
-html, body, .wrapper {
+html, body, {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+    position: relative;
+}
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+    min-width: 940px + 20px;
+    min-height: 100%;
 }
 body {
-    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-family: 'Ubuntu-medium', Arial, Helvetica, sans-serif;
+    font-size: 16px;
     line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
     color: #2f3234;
+    position: relative;
 }
 .section {
-    height: 100%;
+    width: 100%;
+    height: 100vh;
+    min-width: 940px;
+    min-height: 650px;
     margin: 0;
     padding: 0;
     background-color: rgba(0, 0, 0, 0.31);
-    min-width: 1100px;
-    min-height: 650px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
 }
 .container {
-    width: 1100px;
+    width: 940px;
     height: 100%;
     margin: 0 auto;
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    // border: 2px solid greenyellow;
+}
+footer {
+    position: relative;
+    width: 100%;
 }
 ul {
     margin: 0;
@@ -35,24 +55,18 @@ ul {
     box-sizing: border-box;
     list-style: none;
 }
-a {
-    text-decoration: none;
-}
 p {
     margin: 0;
 }
 .btn {
-    width: 100px;
-    height: 35px;
+    display: block;
+    padding: 10px 15px;
     background: $orange;
     border-radius: 5px;
     color: white;
     text-decoration: none;
     font-size: 13px;
-    font-weight: 500;
-    line-height: 1.42;
     text-transform: uppercase;
-    padding: 10px 17px;
     transition: .5s;
     &:hover {
         background-color: #c1401e;
@@ -65,4 +79,49 @@ p {
     font-weight: 400;
     line-height: 1.42;
     margin: 0;
+}
+.arrow-scroll{
+    left: 50%;
+    fill: #fff;
+    width: 30px;
+    height: 15px;
+}
+.fixed-menu {
+    position: fixed;
+    top: 50px;
+    right: 45px;
+}
+.fixed-menu__item {
+    margin-bottom: 10px;
+
+    &.active {
+        .fixed-menu__link {
+        border-color: #fff;
+        }
+    }
+}
+.fixed-menu__link {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+    border: 1px solid transparent;
+
+    &:hover {
+        border-color: #fff;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }

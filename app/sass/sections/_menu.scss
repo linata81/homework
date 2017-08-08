@@ -1,0 +1,95 @@
+.menu {
+    background-image: url(../img/bg/menu_bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+.title_menu {
+    color: #fff;
+    margin-right: auto;
+    margin-top: 90px;
+}
+.menu-acco {
+    display: flex;
+    text-align: center;
+    color: #fff;
+    font-family: 'Ubuntu-light';
+    font-size: 14px;
+}
+.menu-acco__item {
+    display: flex;
+
+    &.active {
+        .text__wrap {
+            width: 60%;
+        }
+    }
+}
+.title__acco {
+    color: #fff;
+    font-family: 'Gagalin';
+    font-size: 40px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+}
+.title__acco__meat {
+    background-image: url(../img/bg/meat_eating.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title__acco__wrap {
+    display: flex;
+    transform: rotate(270deg);
+}
+.part1 {
+    margin-right:15px;
+}
+.title__acco__vegetarian {
+    background-image: url(../img/bg/vegetarian.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title__acco__diet {
+    background-image: url(../img/bg/diet.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text__wrap {
+    display: flex;
+    width: 0px;
+    overflow: hidden;
+    text-align: left;
+    background: #3e3f3c;
+    opacity:.93;
+}
+.text__wrap__meat {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 160px;
+}
+.text__wrap__vegetarian {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 80px;
+}
+.text__wrap__diet {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.menu-acco__text {
+    padding: 60px 30px;
+}

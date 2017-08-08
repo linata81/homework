@@ -9,12 +9,17 @@ var gulp            = require('gulp'),
     imagemin        = require('gulp-imagemin'),
     pngquant        = require('imagemin-pngquant'),
     cache           = require('gulp-cache'),
-    autoprefixer    = require('gulp-autoprefixer');
+    autoprefixer    = require('gulp-autoprefixer'),
+    cssunit         = require('gulp-css-unit');
 
 gulp.task('sass', function() {
     return gulp.src('app/sass/**/*.+(scss|sass)')
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8'], { cascade: true}))
+    .pipe(cssunit({
+        type : "px-to-rem",
+        rootSize: 16 
+    }))
     .pipe(gulp.dest('app/css'))
     .pipe(BrowserSync.reload({stream: true}))
 });

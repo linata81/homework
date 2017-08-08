@@ -1,6 +1,15 @@
-@import "var_mix";
+$yellow:#f9b43b;
+$orange:#e45028;
+$dark:#2f3234;
+
+@import "mixin";
 @import "fonts";
 @import "base";
 @import "sections/hero";
 @import "sections/best";
 @import "sections/burger";
+@import "sections/team";
+@import "sections/reviews";
+@import "sections/order";
+@import "sections/contacts";
+@import "sections/menu";

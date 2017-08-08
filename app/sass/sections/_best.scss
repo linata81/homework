@@ -1,33 +1,31 @@
 .best {
     background-image: url(../img/bg/best_bg.png);
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center center;
     background-size: cover;
+    text-align: center;
 }
 .title_best {
     color: $dark;
-    margin-bottom: rem(60px);
-    margin-top: rem(60px);
+    margin-bottom: 61px;
+    margin-top: 56px;
 }
 .best__content {
     display: flex;
-    align-items: stretch;
-    justify-content: space-between;
 }
 .best__item{
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: $wb;
 }
-.item__icon{
-    width: 100%;
-    text-align: center;
+.item__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.item__сaption, .item__text, {
-    text-align: center;
-    width: 100%;
-    margin-top: rem(25px);
+.icon{
+    height: 90px;
 }
 .meat {
     fill: #e25028;
@@ -39,16 +37,14 @@
     fill: #8ac03e;
 }
 .item__сaption {
+    margin: 24px 0;
     font-family: 'Lifehack';
     font-size: 24.1px;
     line-height: 1;
 }
 .item__text {
-    font-family: 'Ubuntu';
-    font-size: 14.05px;
+    font-family: 'Ubuntu-light';
+    font-size: 14.03px;
     line-height: 1.6;
     color: #848281;
-    text-align: justify;
-    box-sizing: border-box;
-    padding: 0 20px;
 }
