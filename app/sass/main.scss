@@ -2,14 +2,18 @@ $yellow:#f9b43b;
 $orange:#e45028;
 $dark:#2f3234;
 
+$tablets: 768px;
+$phones: 480px;
+
 @import "mixin";
 @import "fonts";
 @import "base";
+@import "sections/hamburger-menu-link";
 @import "sections/hero";
 @import "sections/best";
 @import "sections/burger";
 @import "sections/team";
 @import "sections/reviews";
 @import "sections/order";
-@import "sections/contacts";
+@import "sections/map";
 @import "sections/menu";

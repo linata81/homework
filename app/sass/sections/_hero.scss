@@ -13,11 +13,18 @@
     height: 85px;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+}
+.header__logo {
+    margin-right: auto;
 }
 .header__menu {
     display: flex;
     align-items: center;
-    margin-left: auto;
+
+    @include tablets {
+        display: none;
+    }
 }
 .nav{
     margin-right: 15px;
@@ -51,18 +58,34 @@
     //     text-decoration: underline;
     // }
 }
+.header__links {
+    display: flex;
+    align-items: center;
+}
 .hero__contant-container{
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .hero__content {
     display: flex;
     align-items: center;
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20%;
+    }
+    @include phones {
+        padding: 0;
+    }
+
 }
 .hero__img, .hero__description {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .hero__img-pic{
     max-width: 100%;
@@ -70,6 +93,10 @@
 .title_hero {
     padding-top: 57px;
     padding-bottom: 10px;
+
+    @include tablets {
+        padding-top: 20px;
+    }
 }
 .hero__description-text {
     color: #fff;

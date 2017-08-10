@@ -12,6 +12,14 @@
     color: #fff;
     margin-right: auto;
     margin-top: 90px;
+
+    @include tablets {
+        margin-top: 0;
+        margin-left: 25px;
+    }
+    @include phones {
+        display: none;
+    }
 }
 .menu-acco {
     display: flex;
@@ -26,6 +34,9 @@
     &.active {
         .text__wrap {
             width: 60%;
+            @include tablets {
+                width: auto;
+            }
         }
     }
 }
@@ -38,6 +49,10 @@
     align-items: center;
     justify-content: center;
     width: 80px;
+
+    @include tablets {
+        align-items: flex-end;
+    }
 }
 .title__acco__meat {
     background-image: url(../img/bg/meat_eating.png);
@@ -48,6 +63,26 @@
 .title__acco__wrap {
     display: flex;
     transform: rotate(270deg);
+}
+.title__acco__wrap_1 {
+    @include tablets {
+        padding-left: 267px;
+    }
+}
+.title__acco__wrap_1_color, .title__acco__wrap_2_color, .title__acco__wrap_3_color {
+    @include tablets {
+        color: $yellow;
+    }
+}
+.title__acco__wrap_2 {
+    @include tablets {
+        padding-left: 290px;
+    }
+}
+.title__acco__wrap_3 {
+    @include tablets {
+        padding-left: 238px;
+    }
 }
 .part1 {
     margin-right:15px;
@@ -66,30 +101,65 @@
 }
 .text__wrap {
     display: flex;
-    width: 0px;
+    width: 0;
     overflow: hidden;
     text-align: left;
     background: #3e3f3c;
     opacity:.93;
+
 }
 .text__wrap__meat {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 160px;
+
+    @include phones {
+        right: 0;
+        z-index: 1;
+    }
 }
 .text__wrap__vegetarian {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 80px;
+
+    @include phones {
+        right: 0;
+        z-index: 2;
+    }
 }
 .text__wrap__diet {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
+
+    @include phones {
+        right: 0;
+        z-index: 3;
+    }
 }
 .menu-acco__text {
     padding: 60px 30px;
+    position: relative;
+    
+    @include tablets {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    @include phones {
+        padding: 60px 35px 0 35px;
+    }
+}
+.menu-acco__closed {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    display: none;
+
+    @include phones {
+        display: block;
+    }
 }
