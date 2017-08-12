@@ -42,8 +42,9 @@
     align-items: center;
 
     @include phones {
+        width: 80%;
         align-items: flex-start;
-        margin-left: 25px;
+        padding-left: 25px;
     }
 }
 .icon{

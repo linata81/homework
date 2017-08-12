@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <title>MrBurger</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
 </head>
+
 <body>
     <div class="wrapper">
         <div class="maincontent">
             <section class="section hero">
-                <div class="container hero__wrapper">
+                <div class="container">
                     <header class="header">
                         <div class="header__logo">
                             <img src="img/logo.svg" alt="logo" class="logo__img">
@@ -122,11 +124,11 @@
                             </div>
                             <div class="img__bot">
                                 <span class="img__number">1200</span>
-                                <div class="kkal__wrap"> 
+                                <div class="kkal__wrap">
                                     <svg class="icon kkal">
                                         <use xlink:href="img/sprite.svg#kkal"></use>
                                     </svg>
-                                  </div> 
+                                </div>
                                 <span class="img__text">ккал</span>
                             </div>
                         </div>
@@ -138,11 +140,11 @@
                                     экзотического соуса чураско.</p>
                             </div>
                             <div class="burger__content__price">
-                                 <div class="price"> 
+                                <div class="price">
                                     <span class="price__number">500</span>
                                     <span class="price__letter">рублей</span>
                                     <span class="price__btn"><a href="#" class="btn btn__burger">заказать</a></span>
-                                 </div> 
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -303,7 +305,7 @@
                                     метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование
                                     редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный
                                     анжамбеман. Наш современник стал особенно чутко относиться к слову.</p>
-                                <img src="img/closed.png" alt="закрыть" class="menu-acco__closed">    
+                                <img src="img/closed.png" alt="закрыть" class="menu-acco__closed">
                             </div>
                         </div>
                     </li>
@@ -323,7 +325,7 @@
                                     метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование
                                     редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный
                                     анжамбеман. Наш современник стал особенно чутко относиться к слову.</p>
-                                <img src="img/closed.png" alt="закрыть" class="menu-acco__closed">    
+                                <img src="img/closed.png" alt="закрыть" class="menu-acco__closed">
                             </div>
                         </div>
                     </li>
@@ -488,58 +490,58 @@
             <section class="section order">
                 <div class="container form__container">
                     <div class="title title_order">закажите доставку</div>
-                        <form action="#" class="order__form">
-                             <div class="form__left-side">
-                                <div class="form__legend">
-                                    <label for="first__name" class="form__label">Имя</label>
-                                    <label for="phone" class="form__label">Телефон</label>
+                    <form action="#" class="order__form">
+                        <div class="form__left-side">
+                            <div class="form__legend">
+                                <label for="first__name" class="form__label">Имя</label>
+                                <label for="phone" class="form__label">Телефон</label>
+                            </div>
+                            <div class="form__row">
+                                <input type="text" class="form__input" id="first__name">
+                                <input type="text" class="form__input" id="phone">
+                            </div>
+                            <div class="form__legend">
+                                <label for="street" class="form__label">Улица</label>
+                            </div>
+                            <div class="form__row">
+                                <input type="text" class="form__input" id="street">
+                            </div>
+                            <div class="form__legend">
+                                <label for="house__number" class="form__label">Дом</label>
+                                <label for="housing__number" class="form__label">Корпус</label>
+                                <label for="apartment__number" class="form__label">Квартира</label>
+                                <label for="floor__number" class="form__label form__label_floor">Этаж</label>
+                            </div>
+                            <div class="form__row">
+                                <input type="text" class="form__input input__number" id="house__number">
+                                <input type="text" class="form__input input__number" id="housing__number">
+                                <input type="text" class="form__input input__number" id="apartment__number">
+                                <input type="text" class="form__input input__number" id="floor__number">
+                            </div>
+                        </div>
+                        <div class="form__right-side">
+                            <div class="form__legend">
+                                <label for="form__comment" class="form__label">Комментарий</label>
+                            </div>
+                            <textarea class="form__comment" id="form__comment"></textarea>
+                            <div class="radio__wrap">
+                                <div class="form__radio">
+                                    <input type="radio" class="input__radio" id="input__change" name="change" value="change">
+                                    <label for="input__change" class="radio__label">Потребуется сдача</label>
+                                    <input type="radio" class="input__radio" id="input__card" name="change" value="card" checked="checked">
+                                    <label for="input__card" class="radio__label">Оплата по карте</label>
                                 </div>
-                                <div class="form__row">
-                                    <input type="text" class="form__input" id="first__name">
-                                    <input type="text" class="form__input" id="phone">
+                                <div class="form__checkbox">
+                                    <input type="checkbox" class="input__checkbox" id="input__checkbox" checked="checked">
+                                    <label for="input__checkbox" class="checkbox__label">Не перезванивать</label>
                                 </div>
-                                <div class="form__legend">
-                                    <label for="street" class="form__label">Улица</label>
-                                </div>
-                                <div class="form__row">
-                                    <input type="text" class="form__input" id="street">
-                                </div>
-                                <div class="form__legend">
-                                    <label for="house__number" class="form__label">Дом</label>
-                                    <label for="housing__number" class="form__label">Корпус</label>
-                                    <label for="apartment__number" class="form__label">Квартира</label>
-                                    <label for="floor__number" class="form__label form__label_floor">Этаж</label>
-                                </div>
-                                <div class="form__row">
-                                    <input type="text" class="form__input input__number" id="house__number">
-                                    <input type="text" class="form__input input__number" id="housing__number">
-                                    <input type="text" class="form__input input__number" id="apartment__number">
-                                    <input type="text" class="form__input input__number" id="floor__number">
+                                <div class="form__btn">
+                                    <input type="submit" class="btn btn_submite" value="заказать">
+                                    <input type="reset" class="btn__reset" value="Очистить">
                                 </div>
                             </div>
-                            <div class="form__right-side">
-                                <div class="form__legend">
-                                    <label for="form__comment" class="form__label">Комментарий</label>
-                                </div>
-                                <textarea class="form__comment" id="form__comment"></textarea>
-                                <div class="radio__wrap">
-                                    <div class="form__radio">
-                                        <input type="radio" class="input__radio" id="input__change" name="change" value="change">
-                                        <label for="input__change" class="radio__label">Потребуется сдача</label>
-                                        <input type="radio" class="input__radio" id="input__card" name="change" value="card" checked="checked">
-                                        <label for="input__card" class="radio__label">Оплата по карте</label>
-                                    </div>
-                                    <div class="form__checkbox">
-                                        <input type="checkbox" class="input__checkbox" id="input__checkbox" checked="checked">
-                                        <label for="input__checkbox" class="checkbox__label">Не перезванивать</label>
-                                    </div>
-                                    <div class="form__btn">
-                                        <input type="submit" class="btn btn_submite" value="заказать">
-                                        <input type="reset" class="btn__reset" value="Очистить">
-                                    </div>
-                                </div>
-                            </div> 
-                        </form>
+                        </div>
+                    </form>
                 </div>
             </section>
             <section class="section map">
@@ -576,35 +578,80 @@
                     </div>
                 </footer>
             </section>
+            </div>
+            <ul class="fixed-menu">
+                <li class="fixed-menu__item active">
+                    <a href="#" class="fixed-menu__link"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a href="#" class="fixed-menu__link"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a href="#" class="fixed-menu__link"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a href="#" class="fixed-menu__link"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a href="#" class="fixed-menu__link"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a href="#" class="fixed-menu__link"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a href="#" class="fixed-menu__link"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a href="#" class="fixed-menu__link"></a>
+                </li>
+            </ul>
         </div>
-        <ul class="fixed-menu">
-            <li class="fixed-menu__item active">
-                <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
-            </li>
-             <li class="fixed-menu__item">
-                <a href="#" class="fixed-menu__link"></a>
-            </li>
-        </ul>
-    </div>
-    <script src="js/libs.min.js"></script>
-    <script src="js/common.js"></script>    
+        <div class="hamburger__menu">
+            <div class="hamburger-menu__logo">
+                <img src="img/logo.svg" alt="logo" class="logo__img">
+            </div>
+            <a class="hamburger-menu__close" href="#">
+                <img src="img/closed.png" alt="закрыть" class="hamburger-menu__close">
+            </a>
+            <nav class="hamburger-menu__nav">
+                <ul class="hamburger__nav__list">
+                    <li class="hamburger__nav__item"><a href="#" class="hamburger__nav__link">почему мы</a></li>
+                    <li class="hamburger__nav__item"><a href="#" class="hamburger__nav__link">меню</a></li>
+                    <li class="hamburger__nav__item"><a href="#" class="hamburger__nav__link">советы</a></li>
+                    <li class="hamburger__nav__item"><a href="#" class="hamburger__nav__link">кто мы</a></li>
+                    <li class="hamburger__nav__item"><a href="#" class="hamburger__nav__link">свяжитесь с нами</a></li>
+                    <li class="hamburger__nav__item"><a href="#" class="hamburger__nav__link">контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="full-review popup" id="full-review">
+            <a class="full-review__close" href="#">
+                <img class="full-review__close-btn" src="img/red_closed.png">
+            </a>
+            <div class="full-review__inner">
+                <div class="full-review__title">Константин Спилберг</div>
+                <div class="full-review__content">
+                    Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими
+                    мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя
+                    устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой
+                    сочной, а сыр таким расплавленным.
+                </div>
+            </div>
+        </div>
+        <div class="status-popup popup" id="success">
+            <div class="status-popup__inner">
+            <div class="status-popup__message">Сообщение отправлено</div>
+                <a class="status-popup__close btn" href="#">Закрыть</a>
+            </div>
+        </div>
+        <div class="status-popup popup" id="error">
+            <div class="status-popup__inner">
+            <div class="status-popup__message error-message">Произошла ошибка</div>
+                <a class="status-popup__close btn" href="#">Закрыть</a>
+            </div>
+        </div> 
+        <script src="js/libs.min.js"></script>
+        <script src="js/common.js"></script>
 </body>
-</html>
+
+</html> 

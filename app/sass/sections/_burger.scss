@@ -125,12 +125,20 @@
     font-size: 72px;
     color: $orange;
     margin-right: 6px;
+
+    @include phones {
+        font-size: 50.34px;
+    }
 }
 .price__letter {
     font-family: 'Gagalin';
     font-size: 30px;
     color: $orange;
     margin-right: 22px;
+
+    @include phones {
+        font-size: 24.16px;
+    }
 }
 .burger__scroll__left {
     transform: rotate(90deg);
