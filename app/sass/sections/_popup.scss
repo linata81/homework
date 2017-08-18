@@ -3,11 +3,42 @@
 }
 
 .full-review {
+    position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(#2e3133, .92);
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+    transition: opacity .3s;
+    &_visible {
+		display: flex;
+		opacity: 0;
+	}
+}
+// .full-review__list {
+//     width: 95%;
+//     margin: 0 auto;
+//     background-color: #fff;
+//     margin-top: 50px;
+//     position: relative;
+//     border-radius: 5px;
+//     border: 1px transparent;
+// }
+.full-review__item {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 50px;
     position: relative;
-    width: 475px;
-    height: 255px;
     border-radius: 5px;
     border: 1px transparent;
+    display: none;
+    // &.active {
+    //     display: block;
+    // }
 }
 
 .full-review__title {
@@ -15,14 +46,13 @@
     font-family: 'Gagalin';
 	font-size: 14px;
 	text-transform: uppercase;
-    margin-bottom: 30px;
     padding-left: 20px; 
 }
 
 .full-review__content {
     font-family: 'Ubuntu-light';
     font-size: 14px;
-    padding: 0 20px;
+    padding: 30px 20px;
 }
 
 .full-review__close {

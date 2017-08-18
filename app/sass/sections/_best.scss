@@ -12,6 +12,10 @@
     color: $dark;
     margin-bottom: 62px;
     margin-top: 56px;
+
+    @include phones {
+        margin-bottom: 0;
+    }
 }
 .best__content {
     display: flex;

@@ -55,9 +55,9 @@
     text-transform: uppercase;
     text-decoration: none;
     transition: .5s;
-    // &:hover {
-    //     text-decoration: underline;
-    // }
+    &:hover {
+        text-decoration: underline;
+    }
 }
 .header__links {
     display: flex;

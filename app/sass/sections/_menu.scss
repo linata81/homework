@@ -14,11 +14,11 @@
     margin-top: 90px;
 
     @include tablets {
-        margin-top: 0;
-        margin-left: 25px;
+        margin-top: 50px;
+        margin-left: 6%;
     }
     @include phones {
-        display: none;
+        margin-right: 14%;
     }
 }
 .menu-acco {
@@ -70,7 +70,7 @@
         padding-left: 267px;
     }
 }
-.title__acco__wrap_1_color, .title__acco__wrap_2_color, .title__acco__wrap_3_color {
+a.title__acco__wrap_1_color, a.title__acco__wrap_2_color, a.title__acco__wrap_3_color {
     @include tablets {
         color: $yellow;
     }

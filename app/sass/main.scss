@@ -1,6 +1,8 @@
 $yellow:#f9b43b;
 $orange:#e45028;
 $dark:#2f3234;
+$lightOrange:#e25028;
+$green:#8ac03e;
 
 $tablets: 768px;
 $phones: 480px;
@@ -10,6 +12,7 @@ $phones: 480px;
 @import "base";
 @import "sections/hamburger-menu-link";
 @import "sections/hamburger-menu";
+// @import "sprite";
 @import "sections/hero";
 @import "sections/best";
 @import "sections/burger";
@@ -19,3 +22,4 @@ $phones: 480px;
 @import "sections/order";
 @import "sections/map";
 @import "sections/menu";
+
