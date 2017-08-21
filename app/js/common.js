@@ -1,4 +1,82 @@
 (function(){
+//one page scroll
+    var sections = $('.section'),
+    display  = $('.maincontent'),
+    inScroll = false;
+
+    var performTransition = function(sectionEq) {
+
+        if(!inScroll) {
+            inScroll = true;
+            var position = (sectionEq * -100) + '%';
+            display.css({
+                'transform':'translateY (' + position + ')',
+                '-webkit-transform':'translateY(' + position + ')'
+            });
+            sections.eq(sectionEq).addClass('active')
+            .siblings().removeClass('active');
+
+            setTimeout(function(){
+                inScroll = false;
+                $('.fixed-menu__item').eq(sectionEq).addClass('active')
+                .siblings().removeClass('active');
+            }, 1300);
+        }
+        
+    };
+
+    var defineSections = function(sections){
+        var activeSection = sections.filter('.active');
+        return {
+            activeSection: activeSection,
+            nextSection: activeSection.next(),
+            prevSection: activeSection.prev()
+        }
+    };
+
+    $('.wrapper').on('wheel', function(e){
+
+        var deltaY = e.originalEvent.deltaY;
+        var section = defineSections(sections);
+
+        if(deltaY > 0 && section.nextSection.length){//скроллим вниз
+            performTransition(section.nextSection.index());
+        }
+
+        if(deltaY < 0 && section.prevSection.length){ // скроллим вверх
+            performTransition(section.prevSection.index());
+        }
+    });
+
+//для кнопок
+    $(document).on('keydown', function(e){
+        var section = defineSections(sections);
+
+        switch(e.keyCode) {
+            case 40: //вверх
+                if(section.nextSection.length) {
+                    performTransition(section.nextSection.index());
+                }
+                break;
+            case 38: //вниз
+                if(section.prevSection.length) {
+                    performTransition(section.prevSection.index());
+                }
+                break;
+        }
+    });
+
+//nav menu
+    $('[data-scroll-to]').on('click', function(e){
+        e.preventDefault();
+        var elem = $(e.target);
+        var sectionNum = parseInt(elem.attr('data-scroll-to'));
+        performTransition(sectionNum);
+    });
+
+})();
+
+$(function(){
 
 //section hero
     $('.hamburger-menu-link').on('click', function(e){
@@ -51,4 +129,33 @@
         $('.full-review').hide();
     });
 
-})();
+//section order form
+    var submitForm = function(e) {
+        e.preventDefault();
+
+        var form = $(e.target),
+            url  = form.attr('action'),
+            data = form.serialize();
+
+        var request = $.ajax({
+            type: 'POST',
+            url: url,
+            data: data
+        });
+
+        request.done(function() {
+            $('#success').show();
+        });
+        request.fail(function() {
+            $('#error').show();
+        });
+    };
+
+    $('#order__form').on('submit', submitForm);
+
+    $('.status-popup__close').on('click', function(e){
+        e.preventDefault();
+        $('.status-popup').hide();
+    })
+
+});

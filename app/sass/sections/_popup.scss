@@ -15,20 +15,11 @@
     transition: opacity .3s;
     &_visible {
 		display: flex;
-		opacity: 0;
+        opacity: 0;
 	}
 }
-// .full-review__list {
-//     width: 95%;
-//     margin: 0 auto;
-//     background-color: #fff;
-//     margin-top: 50px;
-//     position: relative;
-//     border-radius: 5px;
-//     border: 1px transparent;
-// }
 .full-review__item {
-    width: 95%;
+    width: 60%;
     margin: 0 auto;
     background-color: #fff;
     margin-top: 50px;
@@ -36,9 +27,17 @@
     border-radius: 5px;
     border: 1px transparent;
     display: none;
-    // &.active {
-    //     display: block;
-    // }
+
+    @include tablets {
+        margin: 0;
+        margin: 0 auto;
+        margin-top: 45%;
+    }
+    @include phones {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 10%;
+    }
 }
 
 .full-review__title {
@@ -68,12 +67,22 @@
 	}
 }
 .status-popup {
-width: 200px;
-height: 100px;
-text-align: center;
-font-family: 'Ubuntu-light';
-font-size: 14px;
-border-radius: 5px;
+    width: 197px;
+    height: 107px;
+    background-color: white;
+    text-align: center;
+    font-family: 'Ubuntu-light';
+    font-size: 14px;
+    border-radius: 5px;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    z-index: 150;
+    box-shadow: 0 0 40px rgba(0, 0, 0 ,0.5);
+
+    @include phones {
+        left: 30%;
+    }
 }
 .status-popup__inner {
     display: flex;
@@ -81,15 +90,13 @@ border-radius: 5px;
     align-items: center;
 }
 .status-popup__message {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .status-popup__close {
     width: 100px;
     height: 35px;
 }
-
-
 .error-message {
 	color: red;
 }

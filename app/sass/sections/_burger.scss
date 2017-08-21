@@ -114,16 +114,23 @@
     margin-top: 15px;
 
     @include tablets {
-        margin-bottom: 15px;
+        // margin-top: 30px;
         padding: 0 20px;
+    }
+    @include phones {
+        margin: 0;
     }
 }
 .burger__content__text {
     font-family: 'Ubuntu-light';
     font-size: 14px;
-    line-height: 1.6;
+    // line-height: 1.6;
     padding-right: 24px;
     margin-bottom: 10px;
+
+    @include phones {
+        margin: 0;
+    }
 }
 .burger__content__price{
     display: flex;

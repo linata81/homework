@@ -7,12 +7,12 @@ $green:#8ac03e;
 $tablets: 768px;
 $phones: 480px;
 
+@import "normalize";
 @import "mixin";
 @import "fonts";
 @import "base";
 @import "sections/hamburger-menu-link";
 @import "sections/hamburger-menu";
-// @import "sprite";
 @import "sections/hero";
 @import "sections/best";
 @import "sections/burger";

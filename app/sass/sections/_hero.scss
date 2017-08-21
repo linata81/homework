@@ -63,6 +63,14 @@
     display: flex;
     align-items: center;
 }
+.hero__contant-container {
+    margin-top: 4%;
+    margin-bottom: auto;
+
+    @include phones {
+        margin-top: 0;
+    }
+}
 .hero__content {
     display: flex;
 
@@ -97,6 +105,9 @@
         font-size: 63px;
         padding-top: 20px;
     }
+    @include phones {
+       padding: 0;
+    }
 }
 .hero__description-text {
     color: #fff;
@@ -111,5 +122,9 @@
 .hero__scroll {
     position: absolute;
     bottom: 40px;
-    left: 50%;
+    left: 48%;
+
+    @include phones {
+        bottom: 0;
+    }
 }

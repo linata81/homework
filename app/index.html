@@ -7,16 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <title>MrBurger</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/fonts.css">
 </head>
 
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="section hero">
+            <section class="section hero active">
                 <div class="container">
                     <header class="header">
                         <div class="header__logo">
@@ -25,17 +22,17 @@
                         <div class="header__menu">
                             <nav class="nav">
                                 <ul class="nav__list">
-                                    <li class="nav__item"><a href="#" class="nav__link">о нас</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">бургеры</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">команда</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">меню</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">отзывы</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">контакты</a></li>
+                                    <li class="nav__item"><a href="#" class="nav__link" data-scroll-to ="1">о нас</a></li>
+                                    <li class="nav__item"><a href="#" class="nav__link" data-scroll-to ="2">бургеры</a></li>
+                                    <li class="nav__item"><a href="#" class="nav__link" data-scroll-to ="3">команда</a></li>
+                                    <li class="nav__item"><a href="#" class="nav__link" data-scroll-to ="4">меню</a></li>
+                                    <li class="nav__item"><a href="#" class="nav__link" data-scroll-to ="5">отзывы</a></li>
+                                    <li class="nav__item"><a href="#" class="nav__link" data-scroll-to ="7">контакты</a></li>
                                 </ul>
                             </nav>
                         </div>
                         <div class="header__links">
-                            <a href="#" class="btn">заказать</a>
+                            <a href="#" class="btn" data-scroll-to ="6">заказать</a>
                             <a class="hamburger-menu-link" href="#">
                                 <div class="hamburger-menu-link__bars"></div>
                             </a>
@@ -52,8 +49,8 @@
                             </div>
                         </div>
                         <a class="hero__scroll" href="#">
-                            <svg class="arrow-scroll">
-                                <use xlink:href="img/sprite.svg#arrow-scroll"></use>
+                            <svg class="arrow-scroll" data-scroll-to ="1">
+                                <use xlink:href="svg/sprite.svg#arrow-scroll"></use>
                             </svg>
                         </a>
                     </div>
@@ -66,7 +63,7 @@
                         <div class="best__item">
                             <div class="item__icon">
                                 <svg class="icon meat">
-                                    <use xlink:href="img/sprite.svg#meat"></use>
+                                    <use xlink:href="svg/sprite.svg#meat"></use>
                                 </svg>
                             </div>
                             <div class="item__desc">
@@ -81,7 +78,7 @@
                         <div class="best__item">
                             <div class="item__icon">
                                 <svg class="icon hand">
-                                    <use xlink:href="img/sprite.svg#hand"></use>
+                                    <use xlink:href="svg/sprite.svg#hand"></use>
                                 </svg>
                             </div>
                             <div class="item__desc">
@@ -96,7 +93,7 @@
                         <div class="best__item">
                             <div class="item__icon">
                                 <svg class="icon natural">
-                                    <use xlink:href="img/sprite.svg#natural"></use>
+                                    <use xlink:href="svg/sprite.svg#natural"></use>
                                 </svg>
                             </div>
                             <div class="item__desc">
@@ -115,7 +112,7 @@
                         <div class="burger__img">
                             <div class="img__top">
                                 <svg class="icon icon__burger">
-                                    <use xlink:href="img/sprite.svg#burger"></use>
+                                    <use xlink:href="svg/sprite.svg#burger"></use>
                                 </svg>
                                 <span class="img__text">состав</span>
                                 <div class="burger__products">
@@ -123,7 +120,7 @@
                                         <li class="burger__products__item">
                                             <div class="products__item__icon">
                                                 <svg class="products__icon beef">
-                                                    <use xlink:href="img/sprite.svg#beef"></use>
+                                                    <use xlink:href="svg/sprite.svg#beef"></use>
                                                 </svg>
                                             </div>
                                             <div class="products__item__nomination">Говядина</div>
@@ -132,7 +129,7 @@
                                         <li class="burger__products__item">
                                             <div class="products__item__icon">
                                                 <svg class="products__icon buns">
-                                                    <use xlink:href="img/sprite.svg#buns"></use>
+                                                    <use xlink:href="svg/sprite.svg#buns"></use>
                                                 </svg>
                                             </div>
                                             <div class="products__item__nomination">Булочки</div>
@@ -141,7 +138,7 @@
                                         <li class="burger__products__item">
                                             <div class="products__item__icon">
                                                 <svg class="products__icon salad">
-                                                    <use xlink:href="img/sprite.svg#salad"></use>
+                                                    <use xlink:href="svg/sprite.svg#salad"></use>
                                                 </svg>
                                             </div>
                                             <div class="products__item__nomination">Зелень</div>
@@ -150,7 +147,7 @@
                                         <li class="burger__products__item">
                                             <div class="products__item__icon">
                                                 <svg class="products__icon sauce">
-                                                    <use xlink:href="img/sprite.svg#sauce"></use>
+                                                    <use xlink:href="svg/sprite.svg#sauce"></use>
                                                 </svg>
                                             </div>
                                             <div class="products__item__nomination">Соус</div>
@@ -159,7 +156,7 @@
                                         <li class="burger__products__item">
                                             <div class="products__item__icon">
                                                 <svg class="products__icon cucumber">
-                                                    <use xlink:href="img/sprite.svg#cucumber"></use>
+                                                    <use xlink:href="svg/sprite.svg#cucumber"></use>
                                                 </svg>
                                             </div>
                                             <div class="products__item__nomination">Овощи</div>
@@ -168,7 +165,7 @@
                                         <li class="burger__products__item">
                                             <div class="products__item__icon">
                                                 <svg class="products__icon cheese">
-                                                    <use xlink:href="img/sprite.svg#cheese"></use>
+                                                    <use xlink:href="svg/sprite.svg#cheese"></use>
                                                 </svg>
                                             </div>
                                             <div class="products__item__nomination">Сыр</div>
@@ -187,7 +184,7 @@
                                 <span class="img__number">1200</span>
                                 <div class="kkal__wrap">
                                     <svg class="icon kkal">
-                                        <use xlink:href="img/sprite.svg#kkal"></use>
+                                        <use xlink:href="svg/sprite.svg#kkal"></use>
                                     </svg>
                                 </div>
                                 <span class="img__text">ккал</span>
@@ -204,7 +201,7 @@
                                 <div class="price">
                                     <span class="price__number">500</span>
                                     <span class="price__letter">рублей</span>
-                                    <span class="price__btn"><a href="#" class="btn btn__burger">заказать</a></span>
+                                    <span class="price__btn"><a href="#" class="btn btn__burger" data-scroll-to ="6">заказать</a></span>
                                 </div>
                             </div>
                         </div>
@@ -212,12 +209,12 @@
                     <div class="burger__scroll">
                         <a class="burger__scroll__left" href="#">
                             <svg class="arrow-scroll">
-                                <use xlink:href="img/sprite.svg#arrow-scroll"></use>
+                                <use xlink:href="svg/sprite.svg#arrow-scroll"></use>
                             </svg>
                         </a>
                         <a class=" burger__scroll__right" href="#">
                             <svg class="arrow-scroll">
-                                <use xlink:href="img/sprite.svg#arrow-scroll"></use>
+                                <use xlink:href="svg/sprite.svg#arrow-scroll"></use>
                             </svg>
                         </a>
                     </div>
@@ -551,21 +548,21 @@
             <section class="section order">
                 <div class="container form__container">
                     <div class="title title_order">закажите доставку</div>
-                    <form action="#" class="order__form">
+                    <form action="server.php" method="post" class="order__form" id="order__form">
                         <div class="form__left-side">
                             <div class="form__legend">
-                                <label for="first__name" class="form__label">Имя</label>
+                                <label for="name" class="form__label">Имя</label>
                                 <label for="phone" class="form__label">Телефон</label>
                             </div>
                             <div class="form__row">
-                                <input type="text" class="form__input" id="first__name">
-                                <input type="text" class="form__input" id="phone">
+                                <input type="text" class="form__input" id="name" name="name">
+                                <input type="text" class="form__input" id="phone" name="phone">
                             </div>
                             <div class="form__legend">
                                 <label for="street" class="form__label">Улица</label>
                             </div>
                             <div class="form__row">
-                                <input type="text" class="form__input" id="street">
+                                <input type="text" class="form__input" id="street" name="street">
                             </div>
                             <div class="form__legend">
                                 <label for="house__number" class="form__label">Дом</label>
@@ -574,27 +571,27 @@
                                 <label for="floor__number" class="form__label form__label_floor">Этаж</label>
                             </div>
                             <div class="form__row">
-                                <input type="text" class="form__input input__number" id="house__number">
-                                <input type="text" class="form__input input__number" id="housing__number">
-                                <input type="text" class="form__input input__number" id="apartment__number">
-                                <input type="text" class="form__input input__number" id="floor__number">
+                                <input type="text" class="form__input input__number" id="house__number" name="house__number">
+                                <input type="text" class="form__input input__number" id="housing__number" name="housing__number">
+                                <input type="text" class="form__input input__number" id="apartment__number" name="apartment__number">
+                                <input type="text" class="form__input input__number" id="floor__number" name="floor__number">
                             </div>
                         </div>
                         <div class="form__right-side">
                             <div class="form__legend">
                                 <label for="form__comment" class="form__label">Комментарий</label>
                             </div>
-                            <textarea class="form__comment" id="form__comment"></textarea>
+                            <textarea class="form__comment" id="form__comment" name="form__comment"></textarea>
                             <div class="radio__wrap">
                                 <div class="form__radio">
-                                    <input type="radio" class="input__radio" id="input__change" name="change" value="change">
+                                    <input type="radio" class="input__radio" id="input__change" name="change" value="Потребуется сдача">
                                     <label for="input__change" class="radio__label">Потребуется сдача</label>
-                                    <input type="radio" class="input__radio" id="input__card" name="change" value="card" checked="checked">
+                                    <input type="radio" class="input__radio" id="input__card" name="change" value="Оплата по карте" checked="checked">
                                     <label for="input__card" class="radio__label">Оплата по карте</label>
                                 </div>
                                 <div class="form__checkbox">
-                                    <input type="checkbox" class="input__checkbox" id="input__checkbox" checked="checked">
-                                    <label for="input__checkbox" class="checkbox__label">Не перезванивать</label>
+                                    <input type="checkbox" class="input__checkbox" id="dont-disturb" checked="checked"  name="dont-disturb" value="1">
+                                    <label for="dont-disturb" class="checkbox__label">Не перезванивать</label>
                                 </div>
                                 <div class="form__btn">
                                     <input type="submit" class="btn btn_submite" value="заказать">
@@ -620,22 +617,22 @@
                         <div class="footer__cocial">
                             <a href="#" class="link__cocial">
                                 <svg class="icon cocial">
-                                    <use xlink:href="../img/sprite.svg#vk"></use>
+                                    <use xlink:href="svg/sprite.svg#vk"></use>
                                 </svg>
                             <a>
                             <a href="#" class="link__cocial">
                                 <svg class="icon cocial">
-                                    <use xlink:href ="../img/sprite.svg#fb"></use>
+                                    <use xlink:href ="svg/sprite.svg#fb"></use>
                                 </svg>
                             </a>
                             <a href="#" class="link__cocial">
                                 <svg class="icon cocial">
-                                    <use xlink:href="../img/sprite.svg#inst"></use>
+                                    <use xlink:href="svg/sprite.svg#inst"></use>
                                 </svg>
                             </a>
                             <a href="#" class="link__cocial">
                                 <svg class="icon cocial">
-                                    <use xlink:href="../img/sprite.svg#twitter"></use>
+                                    <use xlink:href="svg/sprite.svg#twitter"></use>
                                 </svg>
                             </a>
                         </div>
@@ -645,28 +642,28 @@
             </div>
             <ul class="fixed-menu">
                 <li class="fixed-menu__item active">
-                    <a href="#" class="fixed-menu__link"></a>
+                    <a href="#" class="fixed-menu__link" data-scroll-to ="0"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a href="#" class="fixed-menu__link"></a>
+                    <a href="#" class="fixed-menu__link" data-scroll-to ="1"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a href="#" class="fixed-menu__link"></a>
+                    <a href="#" class="fixed-menu__link" data-scroll-to ="2"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a href="#" class="fixed-menu__link"></a>
+                    <a href="#" class="fixed-menu__link" data-scroll-to ="3"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a href="#" class="fixed-menu__link"></a>
+                    <a href="#" class="fixed-menu__link" data-scroll-to ="4"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a href="#" class="fixed-menu__link"></a>
+                    <a href="#" class="fixed-menu__link" data-scroll-to ="5"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a href="#" class="fixed-menu__link"></a>
+                    <a href="#" class="fixed-menu__link" data-scroll-to ="6"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a href="#" class="fixed-menu__link"></a>
+                    <a href="#" class="fixed-menu__link" data-scroll-to ="7"></a>
                 </li>
             </ul>
         </div>
@@ -679,12 +676,12 @@
             </a>
             <nav class="hamburger-menu__nav">
                 <ul class="hamburger__nav__list">
-                    <li class="hamburger__nav__item"><a href="#" class="hamburger__nav__link">почему мы</a></li>
-                    <li class="hamburger__nav__item"><a href="#" class="hamburger__nav__link">меню</a></li>
-                    <li class="hamburger__nav__item"><a href="#" class="hamburger__nav__link">советы</a></li>
-                    <li class="hamburger__nav__item"><a href="#" class="hamburger__nav__link">кто мы</a></li>
-                    <li class="hamburger__nav__item"><a href="#" class="hamburger__nav__link">свяжитесь с нами</a></li>
-                    <li class="hamburger__nav__item"><a href="#" class="hamburger__nav__link">контакты</a></li>
+                    <li class="hamburger__nav__item"><a href="#" class="hamburger__nav__link" data-scroll-to ="1">почему мы</a></li>
+                    <li class="hamburger__nav__item"><a href="#" class="hamburger__nav__link" data-scroll-to ="4">меню</a></li>
+                    <li class="hamburger__nav__item"><a href="#" class="hamburger__nav__link" data-scroll-to ="2">советы</a></li>
+                    <li class="hamburger__nav__item"><a href="#" class="hamburger__nav__link" data-scroll-to ="3">кто мы</a></li>
+                    <li class="hamburger__nav__item"><a href="#" class="hamburger__nav__link" data-scroll-to ="6">свяжитесь с нами</a></li>
+                    <li class="hamburger__nav__item"><a href="#" class="hamburger__nav__link" data-scroll-to ="7">контакты</a></li>
                 </ul>
             </nav>
         </div>
@@ -818,5 +815,6 @@
         </div> 
         <script src="js/libs.min.js"></script>
         <script src="js/common.js"></script>
+    </div>
 </body>
 </html> 

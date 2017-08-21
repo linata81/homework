@@ -76,10 +76,13 @@ gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
     var buildCss = gulp.src([
         'app/css/main.css',
-        'app/css/libs.min.css',
-        'app/css/fonts.css'
+        // 'app/css/libs.min.css',
+        // 'app/css/fonts.css'
     ])
     .pipe(gulp.dest('dist/css'));
+
+    var buildSvg = gulp.src('app/svg/*.svg')
+    .pipe(gulp.dest('dist/svg'));
 
     var buildFonts = gulp.src('app/fonts/**/*')
     .pipe(gulp.dest('dist/fonts'));
