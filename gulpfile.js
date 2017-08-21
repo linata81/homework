@@ -84,6 +84,9 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
     var buildSvg = gulp.src('app/svg/*.svg')
     .pipe(gulp.dest('dist/svg'));
 
+    var buildPHP = gulp.src('app/*.php')
+    .pipe(gulp.dest('dist'));
+
     var buildFonts = gulp.src('app/fonts/**/*')
     .pipe(gulp.dest('dist/fonts'));
 

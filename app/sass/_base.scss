@@ -33,6 +33,10 @@ body {
     min-height: 650px;
     transition: transform 1s;
     will-change: transform;
+
+    @include tablets {
+        min-height: auto;
+    }
 }
 .section {
     height: 100%;
@@ -44,6 +48,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include tablets {
+        min-height: auto;
+    }
 }
 .container {
     width: 95%;

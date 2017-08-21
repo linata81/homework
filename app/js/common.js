@@ -4,6 +4,8 @@
     display  = $('.maincontent'),
     inScroll = false;
 
+    var md = new MobileDetect(window.navigator.userAgent),
+        ismobile = md.mobile();
     var performTransition = function(sectionEq) {
 
         if(!inScroll) {
@@ -33,21 +35,38 @@
             prevSection: activeSection.prev()
         }
     };
-
-    $('.wrapper').on('wheel', function(e){
-
-        var deltaY = e.originalEvent.deltaY;
+    var scrollTosection = function(direction){
         var section = defineSections(sections);
 
-        if(deltaY > 0 && section.nextSection.length){//скроллим вниз
+        if(direction == 'up' && section.nextSection.length){
             performTransition(section.nextSection.index());
         }
 
-        if(deltaY < 0 && section.prevSection.length){ // скроллим вверх
+        if(direction == 'down' && section.prevSection.length){
             performTransition(section.prevSection.index());
+        }
+    };
+
+    $('.wrapper').on({
+        wheel: function(e){
+            var deltaY = e.originalEvent.deltaY;
+            var direction = deltaY > 0 ? 'up':'down';
+            scrollTosection(direction);
+        },
+        touchmove: function(e) {
+            e.preventDefault();
         }
     });
 
+//one page scroll для телефонов
+    if(ismobile){
+        $(window).swipe({
+            swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+                scrollTosection(direction);
+            }
+        });
+    }
+    
 //для кнопок
     $(document).on('keydown', function(e){
         var section = defineSections(sections);
