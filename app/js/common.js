@@ -91,6 +91,7 @@
         var elem = $(e.target);
         var sectionNum = parseInt(elem.attr('data-scroll-to'));
         performTransition(sectionNum);
+        $('.hamburger__menu').slideUp(300);
     });
 
 })();

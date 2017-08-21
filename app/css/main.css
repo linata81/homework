@@ -691,8 +691,9 @@ a {
 
 .hamburger-menu-link {
   vertical-align: middle;
-  position: relative;
-  height: 1.375rem;
+  position: fixed;
+  top: 2.5rem;
+  right: 1.875rem;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -703,10 +704,7 @@ a {
 
 @media screen and (max-width: 48rem) {
   .hamburger-menu-link {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
   }
 }
 
@@ -726,11 +724,11 @@ a {
 }
 
 .hamburger-menu-link__bars:before {
-  top: 0;
+  top: -0.5rem;
 }
 
 .hamburger-menu-link__bars:after {
-  bottom: 0;
+  bottom: -0.5rem;
 }
 
 .hamburger__menu {
@@ -953,15 +951,16 @@ a {
   text-decoration: underline;
 }
 
-.header__links {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (max-width: 48rem) {
+  .header__links {
+    margin-right: 3.875rem;
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  .header__links {
+    margin-right: 4.6875rem;
+  }
 }
 
 .hero__contant-container {

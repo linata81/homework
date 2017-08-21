@@ -60,8 +60,12 @@
     }
 }
 .header__links {
-    display: flex;
-    align-items: center;
+    @include tablets {
+        margin-right: 62px;
+    }
+    @include phones {
+        margin-right: 75px;
+    }
 }
 .hero__contant-container {
     margin-top: 4%;
