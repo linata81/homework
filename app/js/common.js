@@ -179,3 +179,10 @@ $(function(){
     })
 
 });
+$(function(){
+//slider
+    $('.burger-slider').bxSlider({
+        responsive: false,
+        pager:false,
+    });
+});

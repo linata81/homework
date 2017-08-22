@@ -1226,17 +1226,26 @@ a {
   color: white;
 }
 
+.burger-slider__wrap {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.burger-slider {
+  margin-top: 4.375rem;
+}
+
+@media screen and (max-width: 48rem) {
+  .burger-slider {
+    margin-top: 0;
+  }
+}
+
 .burger__content-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: auto;
-  margin-top: auto;
 }
 
 @media screen and (max-width: 48rem) {
@@ -1319,6 +1328,7 @@ a {
 @media screen and (max-width: 30rem) {
   .img__top {
     bottom: 6.25rem;
+    left: -1.25rem;
   }
 }
 
@@ -1332,6 +1342,19 @@ a {
   margin-bottom: 0.9375rem;
 }
 
+@media screen and (max-width: 48rem) {
+  .img__mid {
+    width: 30.625rem;
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  .img__mid {
+    width: 22.625rem;
+    margin-bottom: 0;
+  }
+}
+
 .icon__burger {
   fill: white;
   width: 3rem;
@@ -1339,7 +1362,13 @@ a {
 }
 
 .burger-pic {
-  max-width: 98%;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 30rem) {
+  .burger-pic {
+    margin-top: 1.875rem;
+  }
 }
 
 .img__bot {
@@ -1436,6 +1465,7 @@ a {
 @media screen and (max-width: 30rem) {
   .title_burger {
     margin: 0;
+    padding: 0 2.5rem;
   }
 }
 
@@ -1449,6 +1479,7 @@ a {
 @media screen and (max-width: 30rem) {
   .burger__content__text {
     margin: 0;
+    width: 25rem;
   }
 }
 
@@ -1616,40 +1647,6 @@ a {
     position: absolute;
     top: 1.25rem;
     right: 1.25rem;
-  }
-}
-
-.burger__scroll__left {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-  position: absolute;
-  top: 50%;
-  left: 2.875rem;
-}
-
-@media screen and (max-width: 30rem) {
-  .burger__scroll__left {
-    left: 0.625rem;
-  }
-}
-
-.burger__scroll__right {
-  -webkit-transform: rotate(270deg);
-      -ms-transform: rotate(270deg);
-          transform: rotate(270deg);
-  -webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
-      -ms-flex-order: 1;
-          order: 1;
-  position: absolute;
-  top: 50%;
-  right: 2.875rem;
-}
-
-@media screen and (max-width: 30rem) {
-  .burger__scroll__right {
-    right: 0.625rem;
   }
 }
 
@@ -2821,7 +2818,7 @@ a {
 .menu-acco__closed {
   position: absolute;
   top: 1.875rem;
-  right: 1.5625rem;
+  right: 3.75rem;
   display: none;
 }
 

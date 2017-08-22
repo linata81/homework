@@ -2,11 +2,22 @@
     background-image: linear-gradient(180deg,#f9b43b 0,#eb8c38 40%,#eb8c38 60%,#eb8c38 0,#f9b43b);
     color: white;
 }
-.burger__content-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: auto;
+.burger-slider__wrap {
     margin-top: auto;
+    margin-bottom: auto;
+}
+.burger-slider {
+    margin-top: 70px;
+    @include tablets {
+        margin-top: 0;
+    }
+}
+.burger__content-container{
+    display: flex;
+    // justify-content: flex-start;
+    // align-items: stretch;
+    // margin-bottom: auto;
+    // margin-top: auto;
 
     @include tablets {
         flex-direction: column;
@@ -42,6 +53,7 @@
 
     @include phones {
         bottom: 100px;
+        left: -20px;
     }
 }
 .img__text {
@@ -51,6 +63,13 @@
 .img__mid {
     margin-top: 95px;
     margin-bottom: 15px;
+    @include tablets {
+        width: 490px;
+    }
+    @include phones {
+        width: 362px;
+        margin-bottom: 0;
+    }
 }
 .icon__burger, {
     fill: white;
@@ -58,14 +77,16 @@
     height: 45px;
 }
 .burger-pic {
-    max-width: 98%;
+    max-width: 100%;
+    @include phones {
+        margin-top: 30px;
+    }
 }
 .img__bot {
     width: 91px;
     height: 91px;
     display: flex;
     flex-direction: column;
-    // align-items: center;
     text-transform: uppercase;
     font-family: 'Gagalin';
     font-size: 14px;
@@ -114,22 +135,22 @@
     margin-top: 15px;
 
     @include tablets {
-        // margin-top: 30px;
         padding: 0 20px;
     }
     @include phones {
         margin: 0;
+        padding: 0 40px;
     }
 }
 .burger__content__text {
     font-family: 'Ubuntu-light';
     font-size: 14px;
-    // line-height: 1.6;
     padding-right: 24px;
     margin-bottom: 10px;
 
     @include phones {
         margin: 0;
+        width: 400px;
     }
 }
 .burger__content__price{
@@ -243,24 +264,24 @@
         right: 20px;
     }
 }
-.burger__scroll__left {
-    transform: rotate(90deg);
-    position: absolute;
-    top: 50%;
-    left: 46px;
+// .burger__scroll__left {
+//     transform: rotate(90deg);
+//     position: absolute;
+//     top: 50%;
+//     left: 46px;
 
-    @include phones {
-        left: 10px;
-    }
-}
-.burger__scroll__right {
-    transform: rotate(270deg);
-    order: 1;
-    position: absolute;
-    top: 50%;
-    right: 46px;
+//     @include phones {
+//         left: 10px;
+//     }
+// }
+// .burger__scroll__right {
+//     transform: rotate(270deg);
+//     order: 1;
+//     position: absolute;
+//     top: 50%;
+//     right: 46px;
 
-    @include phones {
-        right: 10px;
-    }
-}
+//     @include phones {
+//         right: 10px;
+//     }
+// }
