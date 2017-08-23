@@ -96,6 +96,11 @@
     justify-content: center;
     overflow: hidden;
 }
+.hero__img {
+    @include phones {
+        height: 291px;    
+    }
+}
 .hero__img-pic{
     display: block;
     max-width: 100%;

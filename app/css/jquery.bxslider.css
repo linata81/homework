@@ -24,7 +24,7 @@ ul.bxslider {
 }
 .bx-viewport {
   /*fix other elements on the page moving (on Chrome)*/
-  -webkit-transform: translatez(0);
+  /* -webkit-transform: translate(0); */
   min-height: 650px;
   height: 100%;
   position: static;
